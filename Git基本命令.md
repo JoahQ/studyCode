@@ -1,3 +1,4 @@
+2020/09/12
 一、git基本命令
 1. git init         //初始化本地git仓库
 2. git add <file>   //添加文件
@@ -10,3 +11,6 @@
 9. 8. git config --global user.email '****@**'
 
 git commit -m '****'
+
+二、如何忽略不想上传的文件
+touch .gitignore   //
