@@ -15,3 +15,8 @@ git commit -m '****'
 二、如何忽略不想上传的文件
 1. touch .gitignore   //新建.gitignore文件
 2. 在.gitignore文件中输入需要忽略的文件或文件夹路径（如：log.txt;/文件夹）
+
+
+
+
+5. git merge mybranch1 //在主分支master下执行此命令合并mybranch1分支
