@@ -21,7 +21,7 @@ git commit -m '****'
 5. git merge mybranch1 //在主分支master下执行此命令合并mybranch1分支
 
 6. git remote add origin https://****
-7. git push -u orgin master
+7. git push -u origin master
 
 冲突解决方案有三种：
 1. 无视，直接commit自己的代码。
