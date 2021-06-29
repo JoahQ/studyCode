@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -9,7 +7,7 @@ namespace StringEncrypt
 {
     public class Encrypt
     {
-
+        #region 加密方法
         internal string ToEncrypt(string encryptKey, string str)
         {
             try
@@ -39,6 +37,34 @@ namespace StringEncrypt
             }
         }
 
+        internal string ToEncryptCopy(string encryptKey, string str)
+        {
+            try
+            {
+                byte[] p_byte_key = Encoding.Unicode.GetBytes(encryptKey);
+                byte[] p_byte_str = Encoding.Unicode.GetBytes(str);
+
+                MemoryStream memoryStream = new MemoryStream();//创建内存流对象
+                CryptoStream cryptoStream = new CryptoStream(memoryStream,
+                    new DESCryptoServiceProvider().CreateEncryptor(p_byte_key,p_byte_key),CryptoStreamMode.Write);
+
+                cryptoStream.Write(p_byte_str, 0, p_byte_str.Length);
+                cryptoStream.FlushFinalBlock();//将数据压入基础流
+                byte[] p_bt_temp = memoryStream.ToArray();//从内存流中获取字节序列
+                cryptoStream.Close();
+                memoryStream.Close();
+
+                return 
+                    Convert.ToBase64String(p_bt_temp);
+            }
+            catch (CryptographicException ce)
+            {
+                throw new Exception(ce.Message);
+            }
+        }
+        #endregion
+
+        #region 解密方法
         internal string ToDecrypt(string encryptKey, string str)
         {
             try
@@ -70,5 +96,34 @@ namespace StringEncrypt
                 throw new Exception(ce.Message);
             }
         }
+
+        internal string ToDecryptCopy(string encryptKey, string str) 
+        {
+            try
+            {
+                byte[] p_byte_data = Convert.FromBase64String(str);//将加密后的字符串转换成字节序列
+                byte[] p_byte_key = Encoding.Unicode.GetBytes(encryptKey);
+
+                MemoryStream p_memoryStream = new MemoryStream(p_byte_data);
+                CryptoStream p_cryptoStream = new CryptoStream(p_memoryStream,
+                    new DESCryptoServiceProvider().CreateDecryptor(p_byte_key, p_byte_key), CryptoStreamMode.Read);
+
+                byte[] p_bt_temp = new byte[500];
+                MemoryStream p_memroryStream_temp = new MemoryStream();
+                int i = 0;
+                while ((i = p_cryptoStream.Read(p_bt_temp,0,p_bt_temp.Length)) > 0)
+                {
+                    p_memroryStream_temp.Write(p_bt_temp,0,i);
+                }
+
+                return Encoding.Unicode.GetString(p_memroryStream_temp.ToArray());
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        #endregion
     }
 }
