@@ -17,8 +17,10 @@ namespace ConvertToString
                 textBox_Y.Text, textBox_M.Text, textBox_D.Text);
             //DateTime dt = DateTime.ParseExact(s,"yyyy/MM/dd",null);
             DateTime p_dt = DateTime.Parse(s);
+            DateTime c_dt = Convert.ToDateTime(s);
             MessageBox.Show("输入的日期为：" + p_dt.ToLongDateString(),"提示！");
             //MessageBox.Show("输入的日期为：" + dt.ToLongDateString(),"提示！");
+            MessageBox.Show("输入的日期为：" + c_dt.ToLongDateString(), "提示！");
         }
     }
 }
