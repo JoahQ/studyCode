@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "validatePhone", "validatePhone\validatePhone.csproj", "{36C225C1-40EE-4D2B-8C80-1A853DB1B980}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36C225C1-40EE-4D2B-8C80-1A853DB1B980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C225C1-40EE-4D2B-8C80-1A853DB1B980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C225C1-40EE-4D2B-8C80-1A853DB1B980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C225C1-40EE-4D2B-8C80-1A853DB1B980}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B4E8586-334B-4FE8-8649-5874FC3871BB}
+	EndGlobalSection
+EndGlobal
