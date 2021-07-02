@@ -29,9 +29,12 @@ namespace validatePhone
 
         public bool IsPassword(string str_password)
         {
+            //return
+            //  System.Text.RegularExpressions.Regex.IsMatch
+            //    (str_password, @"[A-Za-z]+[0-9]");
             return
-              System.Text.RegularExpressions.Regex.IsMatch
-                (str_password, @"[A-Za-z]+[0-9]");
+  System.Text.RegularExpressions.Regex.IsMatch
+    (str_password, @"^\d{6}$");
         }
 
         private void VPButton_Click(object sender, System.EventArgs e)
