@@ -1,0 +1,5 @@
+2021-08-19 09:51:47,453 - D:/QZH/pyCharWSpace/studyCode/Python/test/logingtest.py[line:26] - DEBUG: debug 信息
+2021-08-19 09:51:47,453 - D:/QZH/pyCharWSpace/studyCode/Python/test/logingtest.py[line:27] - INFO: info 信息
+2021-08-19 09:51:47,453 - D:/QZH/pyCharWSpace/studyCode/Python/test/logingtest.py[line:28] - WARNING: warning 信息
+2021-08-19 09:51:47,453 - D:/QZH/pyCharWSpace/studyCode/Python/test/logingtest.py[line:29] - ERROR: error 信息
+2021-08-19 09:51:47,453 - D:/QZH/pyCharWSpace/studyCode/Python/test/logingtest.py[line:30] - CRITICAL: critial 信息
