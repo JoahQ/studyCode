@@ -1,5 +1,14 @@
-2021-08-19 09:51:47,453 - D:/QZH/pyCharWSpace/studyCode/Python/test/logingtest.py[line:26] - DEBUG: debug 信息
-2021-08-19 09:51:47,453 - D:/QZH/pyCharWSpace/studyCode/Python/test/logingtest.py[line:27] - INFO: info 信息
-2021-08-19 09:51:47,453 - D:/QZH/pyCharWSpace/studyCode/Python/test/logingtest.py[line:28] - WARNING: warning 信息
-2021-08-19 09:51:47,453 - D:/QZH/pyCharWSpace/studyCode/Python/test/logingtest.py[line:29] - ERROR: error 信息
-2021-08-19 09:51:47,453 - D:/QZH/pyCharWSpace/studyCode/Python/test/logingtest.py[line:30] - CRITICAL: critial 信息
+2021-08-19 11:40:43,368 - logingtest.py[line:26] - INFO: start
+2021-08-19 11:40:43,368 - logingtest.py[line:28] - INFO: info 信息
+2021-08-19 11:40:43,368 - logingtest.py[line:29] - WARNING: warning 信息
+2021-08-19 11:40:43,368 - logingtest.py[line:30] - ERROR: error 信息
+2021-08-19 11:40:43,368 - logingtest.py[line:36] - ERROR: list index out of range
+2021-08-19 11:40:43,368 - logingtest.py[line:37] - INFO: Finish.
+2021-08-19 11:40:43,368 - logingtest.py[line:38] - DEBUG: jfkdj
+2021-08-19 11:40:59,227 - logingtest.py[line:26] - INFO: start
+2021-08-19 11:40:59,227 - logingtest.py[line:28] - INFO: info 信息
+2021-08-19 11:40:59,227 - logingtest.py[line:29] - WARNING: warning 信息
+2021-08-19 11:40:59,227 - logingtest.py[line:30] - ERROR: error 信息
+2021-08-19 11:40:59,227 - logingtest.py[line:36] - ERROR: list index out of range
+2021-08-19 11:40:59,227 - logingtest.py[line:37] - INFO: Finish.
+2021-08-19 11:40:59,227 - logingtest.py[line:38] - DEBUG: jfkdj

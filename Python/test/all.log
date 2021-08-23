@@ -1,0 +1,7 @@
+2021-08-19 09:58:37,005 - D:/QZH/pyCharWSpace/studyCode/Python/test/logertest.py[line:39] - DEBUG: debug
+2021-08-19 09:58:37,005 - D:/QZH/pyCharWSpace/studyCode/Python/test/logertest.py[line:40] - INFO: info
+2021-08-19 11:22:46,319 - D:/QZH/pyCharWSpace/studyCode/Python/test/logertest.py[line:39] - DEBUG: debug
+2021-08-19 11:22:46,319 - D:/QZH/pyCharWSpace/studyCode/Python/test/logertest.py[line:40] - INFO: info
+2021-08-19 11:22:46,321 - D:/QZH/pyCharWSpace/studyCode/Python/test/logertest.py[line:41] - WARNING: 警告
+2021-08-19 11:22:46,321 - D:/QZH/pyCharWSpace/studyCode/Python/test/logertest.py[line:42] - ERROR: 报错
+2021-08-19 11:22:46,321 - D:/QZH/pyCharWSpace/studyCode/Python/test/logertest.py[line:43] - CRITICAL: 严重
