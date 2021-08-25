@@ -39,7 +39,7 @@ namespace T021
                     Console.WriteLine("从小到大为：{0},{1},{2}", b, a, c);
 
             }
-            Console.ReadKey();
+            Console.ReadKey(); 
             
         }
     }
