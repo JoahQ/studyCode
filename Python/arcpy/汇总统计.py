@@ -1,0 +1,4 @@
+# -*- coding: gbk -*-
+
+import arcpy
+
