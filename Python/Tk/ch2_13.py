@@ -1,0 +1,16 @@
+from Tkinter import *
+root = Tk()
+root.title("ch2_13")
+# label = Label(root,bitmap="error")
+# label = Label(root,bitmap="hourglass")
+# label = Label(root,bitmap="info")
+# label = Label(root,bitmap="questhead")
+# label = Label(root,bitmap="question")
+# label = Label(root,bitmap="warning")
+# label = Label(root,bitmap="gray12")
+# label = Label(root,bitmap="gray25")
+# label = Label(root,bitmap="gray50")
+label = Label(root,bitmap="gray75")
+
+label.pack()
+root.mainloop()
