@@ -8,7 +8,7 @@ def familyChange(event):
     global familyVar
     global text
     f = tkFont.Font(family=familyVar.get())
-    text.config(font=f)
+    text.configure(font=f)
 
 root = Tk()
 root.title("ch17_7")
