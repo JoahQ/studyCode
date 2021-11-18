@@ -44,3 +44,9 @@ git stash clear: 清空Git栈。
 
 git reset --hard
 git pull
+
+
+
+三、git rm 与 git reset的区别
+git rm：用于从工作区和索引中删除文件
+git reset：用于将当前HEAD复位到指定状态。一般用于撤消之前的一些操作(如：git add,git commit等)。 
