@@ -1,9 +1,10 @@
-#<center> 2021/11/24
+# <center>  2021/11/24  </center>
+
 #### 1.创建一个Django项目“mysiteproject”
 方法1:  
 ```shell
 $: django-admin startproject mysiteproject
-```  
+```
 方法2:  
 ```shell
 $: django-admin startproject mysiteproject .
@@ -11,7 +12,7 @@ $: django-admin startproject mysiteproject .
 #### 2.启动服务
 ```shell 
 $: python manage.py runserver
-``` 
+```
 #### 3.创建应用“myblog”
 ```shell
 $: python manage.py startapp myblog
