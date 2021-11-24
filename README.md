@@ -10,3 +10,5 @@ CSharp目录下为学习C#编程语言的一些代码示例。
 
 Python目录下为学习Python的一些代码示例。
 
+#### 3.[Python3](https://gitee.com/qwvbv/studyCode/tree/master/Python3)
+Python目录下为学习Python3的一些代码示例。
