@@ -144,3 +144,57 @@ Running migrations:
 ```
 
 #### 2.创建超级管理员
+```shell
+$: python manage.py createsuperuser
+
+Username (leave blank to use 'dell1'): zhou
+Email address: admin@admin
+Error: Enter a valid email address.
+Email address: admin@admin.com
+Password:
+Password (again):
+Superuser created successfully.
+```
+
+#### 3.交互模式中练习对数据库的增、删、查、改的操作  
+使用python manage.py shell的方式进入交互模式，用这种方式已经将
+Django环境引入到了当前交互模式中。
+```shell
+$: python manage.py shell
+
+>>> from django.contrib.auth.models import User
+>>> from myblog.models import BlogArticles
+>>> user = User.objects.get(username="zhou")
+```
+面这行语句的含义是获取User数据模型的字段username是zhou的那个对象,
+或者数是数据库表auth_user中字段值是zhou的那条记录（也是对象），
+所以user就是一个包含多个字段值的对象实例。
+```shell
+>>> user.username
+'zhou'
+>>> user.id
+1
+>>> user.password
+'pbkdf2_sha256$260000$YjqFwTZ0W1HhnfHCqTBr3L$6xExAnBOfMkNFgeUgGP5OlZb+o2UNYSC0tZlEI81AX0='
+>>> type(user)
+<class 'django.contrib.auth.models.User'>
+```
+也可以将数据库中所有记录读取出来。
+```shell
+>>> users = User.objects.all()
+>>> users
+<QuerySet [<User: zhou>, <User: qq>]>
+>>> blogs = BlogArticles.objects.all()
+>>> blogs
+<QuerySet [<BlogArticles: 中国现代诗歌>, <BlogArticles: 望庐山瀑布>, <BlogArticles: 将进酒>, <BlogArticles: 静夜思>, <B
+logArticles: Ubuntu环境下python环境的搭建以及pycharm的安装>]>
+>>> for blog in blogs:
+...     print(blog.title)
+...
+中国现代诗歌
+望庐山瀑布
+将进酒
+静夜思
+Ubuntu环境下python环境的搭建以及pycharm的安装
+>>>
+```
