@@ -5,3 +5,5 @@ bin/
 .vs/
 *.suo
 venv/
+go.mod
+go.sum
