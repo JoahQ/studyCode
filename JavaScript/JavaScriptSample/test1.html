@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>test1</title>
+		<script type="text/javascript" src="./modules/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="./modules/vue3/vue.global.js"></script>
+		<script type="text/javascript" src="./modules/vue2/vue.js"></script>
+	</head>
+
+	<body>
+		<div id="栖息地1">
+			<input type="text" v-model="message">
+			<p>{{message}}</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		new Vue({
+			el:'#栖息地1',
+			data:{
+				message:'乖乖虎，你过来呀！'
+			}
+		})
+	</script>
+
+</html>
