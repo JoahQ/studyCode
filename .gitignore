@@ -8,3 +8,4 @@ venv/
 go.mod
 go.sum
 .vscode/
+.project
