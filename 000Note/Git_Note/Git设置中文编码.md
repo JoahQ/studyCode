@@ -8,3 +8,4 @@ git config --global i18n.logoutputencoding utf-8  # 输出 log 编码
 export LESSCHARSET=utf-8                          # less 分页编码
 
 ```
+
